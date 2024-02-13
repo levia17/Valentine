@@ -416,6 +416,19 @@ body {
   top: 19px;
 }
 
+#container_content {
+  position: absolute;
+  font-size: 1em;
+  color: #800f2f;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Pacifico", cursive;
+  top: 100%;
+  left: 0;
+  z-index: 3;
+  animation: upText 1s forwards;
+}
+
 @keyframes upText {
   0% {
     top: 100%;
@@ -439,17 +452,4 @@ body {
   100% {
     transform: translateY(-450px);
   }
-}
-#container_content {
-  position: absolute;
-  font-size: 2em;
-  color: #800f2f;
-  font-weight: bold;
-  line-height: 1;
-  font-family: "Pacifico", cursive;
-  width: 70%;
-  top: 100%;
-  left: 25%;
-  z-index: 3;
-  animation: upText 1s forwards;
 }
