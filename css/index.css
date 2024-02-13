@@ -418,13 +418,13 @@ body {
 
 #container_content {
   position: absolute;
-  font-size: 1em;
+  font-size: 100%;
   color: #800f2f;
   font-weight: bold;
   line-height: 1;
   font-family: "Pacifico", cursive;
   top: 100%;
-  left: 0;
+  left: 25%;
   z-index: 3;
   animation: upText 1s forwards;
 }
