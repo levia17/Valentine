@@ -56,3 +56,28 @@ container.addEventListener("mouseenter", () => {
     }, 100);
   }, delay);
 });
+
+const front = document.querySelector(".front");
+const textcontainer = document.querySelector('.text-container');
+// console.log(textcontainer);
+
+
+function check(){
+  cardSecond.addEventListener("mouseenter", () => {
+    // textcontainer.style.display = `block`;
+    setTimeout(() => {
+      front.style.display = `none`;
+      // console.log("hi!");
+    }, 500);
+  });
+  
+  cardSecond.addEventListener("mouseout", () => {
+    front.style.display = `block`;
+    // textcontainer.style.display = `none`;
+  
+    // console.log("hi!");
+  });
+
+
+  requestAnimationFrame(check);
+}
